@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Electronet Official</title>
+        <link rel="stylesheet" href="css/styles.css"> <!-- Esto enlaza el CSS externo -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -10,7 +11,7 @@
     <body>
           <!-- Navigation Bar -->
         <nav id="Home" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#slideImg">E L E C T R O N E T </a>
+            <a class="navbar-brand" href="#slideImg" style="margin-left: 20px;">E L E C T R O N E T </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,19 +21,19 @@
                         <a class="nav-link" href="#slideImg">Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca</a>
+                        <a class="nav-link" href="#acerca">Acerca</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Servicios</a>
+                        <a class="nav-link" href="#servicios">Servicios</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -93,38 +94,72 @@
             </button>
         </div>
         
-        <div class="container-fluid bg-dark" style="height: 250px !important;">
+        <div id="acerca" class="container-fluid bg-dark" style="height: 250px !important;">
             <div class="row justify-content-center text-center align-items-center h-100">
               <div class="col">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">MISION</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo" style="font-size: 20px; font-weight: bold;">MISION</button>
                     <div id="demo" class="collapse" style="color: white;">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Brindar soluciones integrales en reparación y mantenimiento preventivo y correctivo de equipos de cómputo; 
+                        con enfoque en la calidad, el tiempo y la confianza de nuestros clientes, contribuyendo así al óptimo desempeño tecnológico.
                     </div>
               </div>
               <div class="col">
-                <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo2">VISION</button>
-                <div id="demo2" class="collapse" style="color: white;">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo2" style="font-size: 20px; font-weight: bold;">VISION</button>
+                    <div id="demo2" class="collapse" style="color: white;">
+                        Ser una empresa líder en el sector tecnológico a nivel regional, reconocida por su
+                        compromiso con la excelencia en el servicio y la satisfacción total del cliente en soluciones 
+                        informáticas y tecnológicas.
+                    </div>
                 </div>
-          </div>
             </div>
           </div>
  
-        <div class="container-fluid bg-light" style="height: 500px !important;">
+          <div class="container-fluid bg-dark" style="height: 500px !important;">
+  <div class="row h-100 align-items-center">
+    <!-- Imagen a la izquierda con degradado hacia negro -->
+    <div class="col-md-6 position-relative px-0">
+      <!-- Imagen base -->
+      <img src="img/Electronet-Reparacion.jpg" alt="Descripción de la imagen"
+           class="w-100"
+           style="height: 500px; object-fit: cover;">
+
+      <!-- Capa de degradado a negro (fondo bg-dark) -->
+      <div style="
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+        pointer-events: none;
+      "></div>
+    </div>
+
+    <!-- Descripción a la derecha -->
+    <div class="col-md-6 text-white">
+      <h3>Carousel Example</h3>
+      <p>
+        The following example shows how to create a basic carousel with indicators and controls.
+      </p>
+      <p>
+        Puedes agregar aquí más texto, descripciones de tu empresa o del producto que se muestra en la imagen.
+      </p>
+    </div>
+  </div>
+</div>
+          
+
+        <div id="nosotros" class="container-fluid bg-dark" style="height: 500px !important;">
             <h3>Carousel Example</h3>
             <p>The following example shows how to create a basic carousel with indicators and controls.</p>
         </div>
 
-        <div class="container-fluid bg-dark" style="height: 500px !important;">
+        <div id="servicios" class="container-fluid bg-dark" style="height: 500px !important;">
             <h3>Carousel Example</h3>
             <p>The following example shows how to create a basic carousel with indicators and controls.</p>
         </div>
 
-        <div class="container-fluid bg-light" style="height: 500px !important;">
+        <div id="contacto" class="container-fluid bg-dark" style="height: 300px !important; background-color: black !important;">
             <h3>Carousel Example</h3>
             <p>The following example shows how to create a basic carousel with indicators and controls.</p>
         </div>
