@@ -1,0 +1,8 @@
+/* estilos.css */
+.collapse {
+    transition: height 20s !important;
+  }
+
+.collapsing {
+    transition: height 1s !important;
+  }  
