@@ -6,3 +6,16 @@
 .collapsing {
     transition: height 1s !important;
   }  
+
+.wavy-image {
+    height: 350px;
+    object-fit: cover;
+    clip-path: path("M0,0 L90%,0 C95%,30% 95%,70% 90%,100% L0,100% Z");
+}
+
+/* Para compatibilidad, se puede usar esta alternativa con clip-path poligonal */
+.wavy-image-alternative {
+    height: 350px;
+    object-fit: cover;
+    clip-path: polygon(0 0, 90% 0, 95% 25%, 95% 75%, 90% 100%, 0 100%);
+}
